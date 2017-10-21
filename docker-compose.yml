@@ -2,8 +2,13 @@ version: "3.3"
 services:
 
     nginx:
-        image: nginx:1.13-alpine
+        image: nginx:1.13
         ports:
             - "8002:80"
+        volumes:
+            # mounting index.html in nginx equivalent of /var/www/html
+            # index.php? well nginx cannot understand php. we must use php with
+            # fastcgi process manager (fpm) for nginx to understand it
+            - ./web:/usr/share/nginx/html
 
 
