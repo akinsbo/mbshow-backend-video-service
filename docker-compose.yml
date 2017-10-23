@@ -15,11 +15,16 @@ services:
         # fastcgi process manager (fpm) for nginx to understand
         depends_on:
             - fpm
+#        environment:
+#            - NGINX_HOST=localhost:8002
+#            - NGINX_PORT=80
+#            - API_KEY=1a5c728fc0345a265902ee6771a70ab0
+#            - AMPLIFY_IMAGENAME=my-docker-instance-123
         volumes:
 #            - ./web:/usr/share/nginx/html
 # see more at https://www.digitalocean.com/community/tutorials/how-to-configure-the-nginx-web-server-on-a-virtual-private-server
             - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-            
+
             - ./docker/nginx/logs/nginx-error.log:/var/log/nginx/error.log
             - ./docker/nginx/logs/nginx-access.log:/var/log/nginx/access.log
         command: [nginx-debug, '-g', 'daemon off;']
@@ -30,4 +35,3 @@ services:
             - ./web:/server/http/web
         ports:
             - "9000:9000"
-     
