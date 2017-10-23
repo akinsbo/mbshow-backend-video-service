@@ -1,0 +1,34 @@
+
+2017/10/23 00:37:06 [error] 5#5: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.25.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8002", referrer: "http://localhost:8002/"
+2017/10/23 00:42:56 [emerg] 1#1: "upstream" directive is not allowed here in /etc/nginx/nginx.conf:2
+2017/10/23 00:47:07 [emerg] 1#1: "upstream" directive is not allowed here in /etc/nginx/nginx.conf:1
+2017/10/23 00:51:34 [emerg] 1#1: no "events" section in configuration
+2017/10/23 00:53:13 [error] 5#5: *1 open() "/server/http/web404" failed (2: No such file or directory), client: 172.25.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8002"
+2017/10/23 00:53:24 [error] 5#5: *1 open() "/server/http/web404" failed (2: No such file or directory), client: 172.25.0.1, server: , request: "GET /index.php HTTP/1.1", host: "localhost:8002"
+2017/10/23 00:53:33 [error] 5#5: *1 open() "/server/http/web404" failed (2: No such file or directory), client: 172.25.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8002"
+2017/10/23 00:55:06 [crit] 5#5: *1 connect() to unix:/run/php/php7.1-fpm-alpine3.4.sock failed (2: No such file or directory) while connecting to upstream, client: 172.25.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.1-fpm-alpine3.4.sock:", host: "localhost:8002"
+2017/10/23 01:10:06 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2017/10/23 09:46:36 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:46:55 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:47:18 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:47:41 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:48:03 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:48:34 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:48:56 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:49:16 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:49:44 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:50:23 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:51:24 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:52:35 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:53:45 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:54:54 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:55:59 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:57:03 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:58:07 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 09:59:10 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 10:00:13 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 10:01:17 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 10:02:20 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 10:03:23 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 10:04:26 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
+2017/10/23 10:05:35 [emerg] 1#1: host not found in upstream "fpm" in /etc/nginx/nginx.conf:51
