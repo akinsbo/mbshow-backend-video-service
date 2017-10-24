@@ -21,9 +21,10 @@ remove:
 	@echo "Removing the currently running containers
 	docker-compose rm -v $(NGINX_CONTAINER)
 	docker-compose rm -v $(FPM_CONTAINER)
-	
+
 # Re-run current containers
 run:
 	@echo"Re-create your container from the new image"
 	docker-compose start $(FPM_CONTAINER)
 	docker-compose start $(NGINX_CONTAINER)
+

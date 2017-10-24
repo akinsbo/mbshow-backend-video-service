@@ -2,7 +2,6 @@
     "name": "maryboye-backend-video-service",
     "description": "hellofresh dev test",
     "keywords": ["maryboye", "show", "mbshow"],
-    "homepage": "https//maryboye.com",
     "license": "",
     "authors": [
         {
@@ -16,8 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Video\\": "src/",
-            "classmap": ["src/"]
+            "Video\\": "src/"
         }
     }
 }

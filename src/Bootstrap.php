@@ -12,4 +12,7 @@ declare(strict_types = 1);
  * @author Olaolu Akinsete
  */
 
-require __DIR__ . '/../src/Bootstrap.php';
+echo "index.php- serving from here";
+
+phpinfo();
+
