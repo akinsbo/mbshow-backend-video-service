@@ -22,3 +22,6 @@
 172.23.0.1 - - [23/Oct/2017:14:45:51 +0000] "GET / HTTP/1.1" 200 85147 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
 172.23.0.1 - - [23/Oct/2017:14:46:11 +0000] "GET /metrics HTTP/1.1" 200 84990 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
 172.23.0.1 - - [23/Oct/2017:14:46:14 +0000] "GET /metrics HTTP/1.1" 200 85163 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+172.23.0.1 - - [24/Oct/2017:21:32:41 +0000] "GET / HTTP/1.1" 200 396 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+172.23.0.1 - - [25/Oct/2017:03:52:03 +0000] "GET / HTTP/1.1" 200 88180 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+172.23.0.1 - - [25/Oct/2017:03:52:10 +0000] "GET / HTTP/1.1" 200 88180 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"

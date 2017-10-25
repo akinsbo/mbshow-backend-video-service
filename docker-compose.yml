@@ -32,6 +32,6 @@ services:
     fpm:
         image: php:7.1-fpm-alpine3.4
         volumes:
-            - ./web:/server/http/web
+            - .:/server/http
         ports:
             - "9000:9000"
