@@ -11,4 +11,7 @@ Update the value of the image properties in docker-compose.yml to:
         [image: php:fpm-alpine-latest](https://hub.docker.com/_/php/)
 ### Jenkins
 Install required Jenkins [plugins](http://jenkins-php.org/installation.html)
-Copy the contents of build.sh into Jenkins>Build>Execute shell>Command
+In Jenkins>Build>Execute shell>Command, run:
+```sh
+bash build.sh
+```
