@@ -3,9 +3,9 @@
 #echo "changing permissions on $WORKSPACE/build/tools/*.phar"
 #bash u+x $WORKSPACE/build/jenkins-set-permissions.sh
 
-FILES=/build/tools/*.phar
+FILES=build/tools/*.phar
 for file in $FILES
 do
 echo "setting execute permission on $file"
-chmod u+x $file
+chmod u+x "$file"
 done
