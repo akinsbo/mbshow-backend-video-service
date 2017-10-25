@@ -12,4 +12,18 @@ declare(strict_types = 1);
  * @author Olaolu Akinsete
  */
 
+use PHPUnit\Framework\TestCase;
 
+class IndexTest extends TestCase {
+
+    public function testHello() {
+        $_GET['name'] = 'Olaolu';
+
+        ob_start();
+        include 'src/bootstrap.php';
+        $content = ob_get_clean();
+
+        $this->assertEquals('Hello Olaolu', $content);
+    }
+
+}

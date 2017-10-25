@@ -7,8 +7,8 @@
 ## Maintenance
 ### Updating
 Update the value of the image properties in docker-compose.yml to:
-        [image: nginx:alpine-latest](https://hub.docker.com/_/nginx/)
-        [image: php:fpm-alpine-latest](https://hub.docker.com/_/php/)
+        * [image: nginx:alpine-latest](https://hub.docker.com/_/nginx/)
+        * [image: php:fpm-alpine-latest](https://hub.docker.com/_/php/)
 ### Jenkins
 Install required Jenkins [plugins](http://jenkins-php.org/installation.html)
 In Jenkins>Build>Execute shell>Command, run:

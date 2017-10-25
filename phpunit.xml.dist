@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="tests/bootstrap.php"
+<phpunit bootstrap="vendor/autoload.php"
          backupGlobals="false"
          backupStaticAttributes="false"
+         colors="true"
          strict="true"
          verbose="true">
 
     <testsuites>
-        <testsuite name="ProjectName">
-            <directory suffix="Test.php">tests/unit/</directory>
-            <directory suffix="Test.php">tests/integration/</directory>
+        <testsuite name="MBShow Backend Video Service">
+            <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
 
