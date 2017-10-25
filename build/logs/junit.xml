@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="MBShow Backend Video Service" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.125693">
-    <testsuite name="IndexTest" file="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/tests/Test.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.125693">
-      <testcase name="testHello" class="IndexTest" classname="IndexTest" file="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/tests/Test.php" line="19" assertions="1" time="0.125693"/>
+  <testsuite name="MBShow Backend Video Service" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.091436">
+    <testsuite name="IndexTest" file="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/tests/Test.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.091436">
+      <testcase name="testHello" class="IndexTest" classname="IndexTest" file="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/tests/Test.php" line="19" assertions="1" time="0.091436"/>
     </testsuite>
   </testsuite>
 </testsuites>

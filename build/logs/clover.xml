@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1508940292">
-  <project timestamp="1508940292">
+<coverage generated="1508940604">
+  <project timestamp="1508940604">
     <file name="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/src/bootstrap.php">
       <line num="15" type="stmt" count="1"/>
       <line num="17" type="stmt" count="1"/>
