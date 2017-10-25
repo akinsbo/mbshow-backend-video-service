@@ -3,3 +3,10 @@ nbproject
 
 # Videoservice
 video_service.todo
+
+# Phpunit
+ build/coverage
+ build/logs
+
+# Nginx
+ docker/nginx/logs
