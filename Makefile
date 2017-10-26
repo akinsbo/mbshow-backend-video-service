@@ -27,4 +27,3 @@ run:
 	@echo"Re-create your container from the new image"
 	docker-compose start $(FPM_CONTAINER)
 	docker-compose start $(NGINX_CONTAINER)
-
