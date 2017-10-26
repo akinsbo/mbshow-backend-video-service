@@ -14,7 +14,7 @@
                 </source>
                 <source type="checkstyle" />
                 <!-- alternative checkstyler to support phpcs xml output -->
-                <!-- <source type="phpcs" /> -->
+                <source type="phpcs" />
                 <source type="pmd" />
                 <source type="phploc" />
                 <source type="phpunit">
