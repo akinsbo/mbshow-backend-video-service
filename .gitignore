@@ -4,9 +4,13 @@ nbproject
 # Videoservice
 video_service.todo
 
-# Phpunit
+# Build
  build/coverage
  build/logs
+ build/api
+ pdepend
+ phpdox
+ cache.properties
 
 # Nginx
  docker/nginx/logs

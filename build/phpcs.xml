@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset name="name-of-your-coding-standard">
-    <description>Description of your coding standard</description>
+<ruleset name="PSR-4">
+    <description>This project uses the PSR-4 coding standard</description>
 
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
     <!-- ... -->
