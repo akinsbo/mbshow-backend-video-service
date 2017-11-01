@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/src">
+  <enrichments>
+    <enrichment type="build">
+      <date unix="1509504285" date="01-11-2017" time="02:44:45" iso="2017-11-01T02:44:45+00:00" rfc="Wed, 01 Nov 2017 02:44:45 +0000"/>
+      <phpdox xmlns="http://xml.phpdox.net/src" version="0.10.1" info="phpDox 0.10.1 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors" generated="Generated using phpDox 0.10.1 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors" phar="yes">
+        <enricher type="build"/>
+        <enricher type="git"/>
+        <enricher type="checkstyle"/>
+        <enricher type="phpcs"/>
+        <enricher type="pmd"/>
+        <enricher type="phploc"/>
+        <enricher type="phpunit"/>
+      </phpdox>
+      <php xmlns="http://xml.phpdox.net/src" version="7.0.22-0ubuntu0.16.04.1" os="Linux">
+        <zendextension name="Zend OPcache"/>
+        <zendextension name="Xdebug"/>
+        <extension name="Core"/>
+        <extension name="date"/>
+        <extension name="libxml"/>
+        <extension name="openssl"/>
+        <extension name="pcre"/>
+        <extension name="zlib"/>
+        <extension name="filter"/>
+        <extension name="hash"/>
+        <extension name="pcntl"/>
+        <extension name="Reflection"/>
+        <extension name="SPL"/>
+        <extension name="session"/>
+        <extension name="standard"/>
+        <extension name="PDO"/>
+        <extension name="xml"/>
+        <extension name="calendar"/>
+        <extension name="ctype"/>
+        <extension name="dom"/>
+        <extension name="mbstring"/>
+        <extension name="fileinfo"/>
+        <extension name="ftp"/>
+        <extension name="gettext"/>
+        <extension name="iconv"/>
+        <extension name="json"/>
+        <extension name="exif"/>
+        <extension name="Phar"/>
+        <extension name="posix"/>
+        <extension name="readline"/>
+        <extension name="shmop"/>
+        <extension name="SimpleXML"/>
+        <extension name="sockets"/>
+        <extension name="sysvmsg"/>
+        <extension name="sysvsem"/>
+        <extension name="sysvshm"/>
+        <extension name="tokenizer"/>
+        <extension name="wddx"/>
+        <extension name="xmlreader"/>
+        <extension name="xmlwriter"/>
+        <extension name="xsl"/>
+        <extension name="Zend OPcache"/>
+        <extension name="xdebug"/>
+      </php>
+    </enrichment>
+    <enrichment type="git">
+      <branches xmlns="http://xml.phpdox.net/gitlog">
+        <branch name="master"/>
+      </branches>
+      <current xmlns="http://xml.phpdox.net/gitlog" describe="1496017-dirty" branch="master" commit="14960170d79c2fc491d36a80f0c24f6ec641ce87"/>
+    </enrichment>
+    <enrichment type="phploc">
+      <directories>1</directories>
+      <files>2</files>
+      <loc>48</loc>
+      <lloc>10</lloc>
+      <llocClasses>0</llocClasses>
+      <llocFunctions>5</llocFunctions>
+      <llocGlobal>5</llocGlobal>
+      <cloc>18</cloc>
+      <ccn>0</ccn>
+      <ccnMethods>0</ccnMethods>
+      <interfaces>0</interfaces>
+      <traits>0</traits>
+      <classes>0</classes>
+      <abstractClasses>0</abstractClasses>
+      <concreteClasses>0</concreteClasses>
+      <functions>0</functions>
+      <namedFunctions>0</namedFunctions>
+      <anonymousFunctions>0</anonymousFunctions>
+      <methods>0</methods>
+      <publicMethods>0</publicMethods>
+      <nonPublicMethods>0</nonPublicMethods>
+      <nonStaticMethods>0</nonStaticMethods>
+      <staticMethods>0</staticMethods>
+      <constants>0</constants>
+      <classConstants>0</classConstants>
+      <globalConstants>0</globalConstants>
+      <testClasses>1</testClasses>
+      <testMethods>1</testMethods>
+      <ccnByLloc>0</ccnByLloc>
+      <llocByNof>0</llocByNof>
+      <methodCalls>1</methodCalls>
+      <staticMethodCalls>0</staticMethodCalls>
+      <instanceMethodCalls>1</instanceMethodCalls>
+      <attributeAccesses>0</attributeAccesses>
+      <staticAttributeAccesses>0</staticAttributeAccesses>
+      <instanceAttributeAccesses>0</instanceAttributeAccesses>
+      <globalAccesses>2</globalAccesses>
+      <globalVariableAccesses>0</globalVariableAccesses>
+      <superGlobalVariableAccesses>2</superGlobalVariableAccesses>
+      <globalConstantAccesses>0</globalConstantAccesses>
+      <classCcnMin>1</classCcnMin>
+      <classCcnAvg>1</classCcnAvg>
+      <classCcnMax>1</classCcnMax>
+      <classLlocMin>0</classLlocMin>
+      <classLlocAvg>0</classLlocAvg>
+      <classLlocMax>0</classLlocMax>
+      <methodCcnMin>0</methodCcnMin>
+      <methodCcnAvg>0</methodCcnAvg>
+      <methodCcnMax>0</methodCcnMax>
+      <methodLlocMin>0</methodLlocMin>
+      <methodLlocAvg>0</methodLlocAvg>
+      <methodLlocMax>0</methodLlocMax>
+      <namespaces>0</namespaces>
+      <ncloc>30</ncloc>
+    </enrichment>
+  </enrichments>
+</index>

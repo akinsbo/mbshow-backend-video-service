@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/src" file="bootstrap.php" realpath="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/src/bootstrap.php" size="289" time="2017-10-30T18:49:57+00:00" unixtime="1509389397" sha1="ec56c4f4ec3e2a4a5817530625c9f3409f3fe646" relative="bootstrap.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DECLARE">declare</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">strict_types</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> * MaryBoyeShow</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT"> * 2017 (c) Olaolu Akinsete &lt;oa01@ledebe.com&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT"> * This is video service for MaryBoyeShow.</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT"> * @author Olaolu Akinsete</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_VARIABLE">$input</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$_GET</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COALESCE">??</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'World'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_STRING">printf</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Hello %s'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">htmlspecialchars</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$input</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">ENT_QUOTES</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'UTF-8'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="18"/>
+  <line no="19"/>
+  <line no="20"/>
+<enrichments xmlns="http://xml.phpdox.net/src"><enrichment type="build"><date unix="1509504285" date="01-11-2017" time="02:44:45" iso="2017-11-01T02:44:45+00:00" rfc="Wed, 01 Nov 2017 02:44:45 +0000"/><phpdox xmlns="http://xml.phpdox.net/src" version="0.10.1" info="phpDox 0.10.1 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors" generated="Generated using phpDox 0.10.1 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors" phar="yes"><enricher type="build"/><enricher type="git"/><enricher type="checkstyle"/><enricher type="phpcs"/><enricher type="pmd"/><enricher type="phploc"/><enricher type="phpunit"/></phpdox><php xmlns="http://xml.phpdox.net/src" version="7.0.22-0ubuntu0.16.04.1" os="Linux"><zendextension name="Zend OPcache"/><zendextension name="Xdebug"/><extension name="Core"/><extension name="date"/><extension name="libxml"/><extension name="openssl"/><extension name="pcre"/><extension name="zlib"/><extension name="filter"/><extension name="hash"/><extension name="pcntl"/><extension name="Reflection"/><extension name="SPL"/><extension name="session"/><extension name="standard"/><extension name="PDO"/><extension name="xml"/><extension name="calendar"/><extension name="ctype"/><extension name="dom"/><extension name="mbstring"/><extension name="fileinfo"/><extension name="ftp"/><extension name="gettext"/><extension name="iconv"/><extension name="json"/><extension name="exif"/><extension name="Phar"/><extension name="posix"/><extension name="readline"/><extension name="shmop"/><extension name="SimpleXML"/><extension name="sockets"/><extension name="sysvmsg"/><extension name="sysvsem"/><extension name="sysvshm"/><extension name="tokenizer"/><extension name="wddx"/><extension name="xmlreader"/><extension name="xmlwriter"/><extension name="xsl"/><extension name="Zend OPcache"/><extension name="xdebug"/></php></enrichment></enrichments></source>

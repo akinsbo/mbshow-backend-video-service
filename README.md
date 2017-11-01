@@ -9,8 +9,11 @@
 Update the value of the image properties in docker-compose.yml to:
 
         * [image: nginx:alpine-latest](https://hub.docker.com/_/nginx/)
-        * [image: php:fpm-alpine-latest](https://hub.docker.com/_/php/)
-### Jenkins
+        * [image: php:fpm-alpine-latest](https://hub.docker.com/_/php/)\
+
+###Build
+
+#### Jenkins
 To run in Jenkins, do the following:
 
 * Install required Jenkins [plugins](http://jenkins-php.org/installation.html).
@@ -19,7 +22,7 @@ To run in Jenkins, do the following:
 ```sh
 bash build.sh
 ```
-* Setup Manage Jenkins> Global Tool Configuration > Ant, with a Ant Name and
+* Setup Manage Jenkins> Global Tool Configuration > Ant, with an Ant Name and
  version.
 
 * Select and Add the Ant version in your Jenkins Job
@@ -39,6 +42,14 @@ bash build.sh
         vi /etc/php/7.0/mods-available/xdebug.ini
         xdebug.show_error_trace = 1
         ```
+#### Ant
 
+For local build, install ant locally. If using ubuntu, you may set path by
+adding the following to your /home/<username>/.bashrc
 
+```sh
+export ANT_HOME=/home/olaolu/apache-ant-1.10.1
+export JAVA_HOME=/home/olaolu/jdk1.8.0_144
+export PATH=$ANT_HOME/bin:$PATH
+```
 

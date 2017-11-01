@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="3.1.1">
-<file name="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/src/bootstrap.php">
+<file name="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/src/bootstrap.php">
  <error line="17" column="66" severity="error" message="Expected 1 blank line at end of file; 3 found" source="PSR2.Files.EndFileNewline.TooMany"/>
 </file>
-<file name="/Users/mfm-studio2/Documents/DockerJobs/mbshow-backend-video-service/tests/Test.php">
+<file name="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/tests/Test.php">
  <error line="17" column="1" severity="error" message="Each class must be in a namespace of at least one level (a top-level vendor name)" source="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
  <error line="17" column="34" severity="error" message="Opening brace of a class must be on the line after the definition" source="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
  <error line="19" column="33" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
