@@ -2,12 +2,11 @@
 <index xmlns="http://xml.phpdox.net/src" basedir="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/src">
   <enrichments>
     <enrichment type="build">
-      <date unix="1509504285" date="01-11-2017" time="02:44:45" iso="2017-11-01T02:44:45+00:00" rfc="Wed, 01 Nov 2017 02:44:45 +0000"/>
+      <date unix="1509507915" date="01-11-2017" time="03:45:15" iso="2017-11-01T03:45:15+00:00" rfc="Wed, 01 Nov 2017 03:45:15 +0000"/>
       <phpdox xmlns="http://xml.phpdox.net/src" version="0.10.1" info="phpDox 0.10.1 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors" generated="Generated using phpDox 0.10.1 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors" phar="yes">
         <enricher type="build"/>
         <enricher type="git"/>
         <enricher type="checkstyle"/>
-        <enricher type="phpcs"/>
         <enricher type="pmd"/>
         <enricher type="phploc"/>
         <enricher type="phpunit"/>
@@ -62,7 +61,7 @@
       <branches xmlns="http://xml.phpdox.net/gitlog">
         <branch name="master"/>
       </branches>
-      <current xmlns="http://xml.phpdox.net/gitlog" describe="1496017-dirty" branch="master" commit="14960170d79c2fc491d36a80f0c24f6ec641ce87"/>
+      <current xmlns="http://xml.phpdox.net/gitlog" describe="59d1a18-dirty" branch="master" commit="59d1a18e0f3f63c053c0a7308dd358ba052f4ea5"/>
     </enrichment>
     <enrichment type="phploc">
       <directories>1</directories>

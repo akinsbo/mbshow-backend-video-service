@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1509504284">
-  <project timestamp="1509504284">
+<coverage generated="1509507914">
+  <project timestamp="1509507914">
     <file name="/home/olaolu/NetBeansProjects/mbshow-backend-video-service/src/bootstrap.php">
       <line num="15" type="stmt" count="1"/>
       <line num="17" type="stmt" count="1"/>

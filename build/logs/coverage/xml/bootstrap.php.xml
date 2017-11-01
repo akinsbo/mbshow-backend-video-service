@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="bootstrap.php" path="/">
+    <totals>
+      <lines total="19" comments="9" code="10" executable="2" executed="2" percent="100.00"/>
+      <methods count="0" tested="0" percent="0"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="0" tested="0" percent="0"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <coverage>
+      <line nr="15">
+        <covered by="IndexTest::testHello"/>
+      </line>
+      <line nr="17">
+        <covered by="IndexTest::testHello"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="4"/>
+      <line no="5">
+        <token name="T_COMMENT">/*</token>
+      </line>
+      <line no="6">
+        <token name="T_COMMENT"> * MaryBoyeShow</token>
+      </line>
+      <line no="7">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="8">
+        <token name="T_COMMENT"> * 2017 (c) Olaolu Akinsete &lt;oa01@ledebe.com&gt;</token>
+      </line>
+      <line no="9">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="10">
+        <token name="T_COMMENT"> * This is video service for MaryBoyeShow.</token>
+      </line>
+      <line no="11">
+        <token name="T_COMMENT"> *</token>
+      </line>
+      <line no="12">
+        <token name="T_COMMENT"> * @author Olaolu Akinsete</token>
+      </line>
+      <line no="13">
+        <token name="T_COMMENT"> */</token>
+      </line>
+      <line no="14"/>
+      <line no="15">
+        <token name="T_VARIABLE">$input</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$_GET</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COALESCE">??</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'World'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="16"/>
+      <line no="17">
+        <token name="T_STRING">printf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Hello %s'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">htmlspecialchars</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$input</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ENT_QUOTES</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'UTF-8'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="18"/>
+      <line no="19"/>
+      <line no="20"/>
+    </source>
+  </file>
+</phpunit>
