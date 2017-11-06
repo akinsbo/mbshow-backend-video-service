@@ -1,6 +1,12 @@
 NGINX_CONTAINER = nginx
 FPM_CONTAINER = fpm
 
+IMAGE_NAME = image-name
+CONTAINER_NAME = container-name
+TAG_NAME =v0.01
+CONTAINER_PORT = 80
+HOST_PORT = 3005
+
 # Start up application
 start:
 	@echo "Firing up containers"
@@ -24,6 +30,37 @@ remove:
 
 # Re-run current containers
 run:
-	@echo"Re-create your container from the new image"
+	@echo "Re-create your container from the new image"
 	docker-compose start $(FPM_CONTAINER)
 	docker-compose start $(NGINX_CONTAINER)
+
+
+# Run deployment container
+deploy:
+	@echo "Deploying"
+	@echo "	building docker image"
+	# aws configure
+	docker build -t $(IMAGE_NAME):$(TAG_NAME) .
+#	docker build \
+#	--build-arg AWS_ACCESS_KEY_ID=$(AWS_ACCESS_KEY_ID) \
+#	--build-arg AWS_SECRET_ACCESS_KEY=$(AWS_SECRET_ACCESS_KEY) \
+#	-t $(IMAGE_NAME):$(TAG_NAME) .
+	docker run --env-file ./env.list -d -p $(HOST_PORT):$(CONTAINER_PORT) \
+	--name $(CONTAINER_NAME) $(IMAGE_NAME):$(TAG_NAME)
+
+# git
+fetch:
+	@echo "Fetching from remote repository to override local content"
+	git fetch --all
+	@echo "resetting the local head to remote repository"
+	git reset --hard origin/master
+
+stash:
+	@echo "stashing present content"
+	git stash
+	@echo "pulling from remote repository"
+	git pull
+	@echo "returning content"
+	git stash pop
+
+

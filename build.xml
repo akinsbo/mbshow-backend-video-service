@@ -11,7 +11,7 @@
     <property name="phpunit" value="${basedir}/build/tools/phpunit.phar"/>
 
     <target name="full-build"
-            depends="prepare,static-analysis,phpunit,phpdox,-check-failure"
+            depends="prepare,static-analysis,phpunit,phpdox,-check-failure, document"
             description="Performs static analysis, runs the tests, and generates project documentation"/>
 
     <target name="full-build-parallel"
@@ -26,6 +26,9 @@
             depends="lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci"
             description="Performs static analysis" />
 
+    <target name="document"
+            depends="pdepend, phpcpd, phpcs, phpdox, phploc, phpmd, phpunit"
+            description="Prepares complete documentation"/>
     <!-- Adjust the threadCount attribute's value to the number of CPUs -->
     <target name="static-analysis-parallel"
             description="Performs static analysis (executing the tools in parallel)">
@@ -203,8 +206,7 @@
             depends="prepare"
             description="Find duplicate code using PHPCPD and log result in XML format. Intended for usage within a continuous integration environment.">
         <exec executable="${phpcpd}" taskname="phpcpd">
-            <arg value="--log-pmd" />
-            <arg path="${basedir}/build/logs/pmd-cpd.xml" />
+
             <arg path="${basedir}/src" />
         </exec>
 

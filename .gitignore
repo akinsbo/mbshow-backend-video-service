@@ -14,3 +14,6 @@ video_service.todo
 
 # Nginx
  docker/nginx/logs
+
+# Env
+  env.list
