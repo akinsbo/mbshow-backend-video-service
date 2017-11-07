@@ -1,0 +1,15 @@
+## YAML Template.
+version: "3"
+
+services:
+    deploy:
+        build: .
+        restart: unless-stopped
+        ports:
+            - "8003:80"
+        volumes:
+#            - ./web:/usr/share/nginx/html
+# see more at https://www.digitalocean.com/community/tutorials/how-to-configure-the-nginx-web-server-on-a-virtual-private-server
+            - ./docker/volumes/nginx-vol/_data:/usr/share/nginx/html:ro
+     
+     

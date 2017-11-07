@@ -1,6 +1,5 @@
 # This deploys our code on our cluster on hosted AWS
 FROM nginx:1.13-alpine
-
 LABEL vendor="Olaolu Akinsete"
 LABEL com.maryboyeshow.version="0.0.1-beta"
 LABEL Description="This container deploys our cluster on hosted AWS"
@@ -32,17 +31,15 @@ RUN mv ./kompose /usr/local/bin/kompose
 #ENV AWS_ACCESS_KEY_ID
 #ENV AWS_SECRET_ACCESS_KEY
 RUN echo "Printing the variables"
-RUN echo $AWS_ACCESS_KEY_ID
-RUN echo $AWS_SECRET_ACCESS_KEY
-RUN export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-RUN export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+RUN echo ${AWS_ACCESS_KEY_ID}
+RUN echo ${AWS_SECRET_ACCESS_KEY}
+RUN export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+RUN export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
 
 # Copy and convert with Kompose
-COPY . /usr/share/nginx
-WORKDIR  /usr/share/nginx
-RUN kompose convert --file docker-compose.yml
-
-
+COPY docker-compose.yml /usr/share/nginx/html
+WORKDIR  /usr/share/nginx/html
+CMD ["kompose", "convert", "--file", "docker-compose.yml"]
 
 # deploy with all yml files execpt for docker compose
 # use credentials
