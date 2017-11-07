@@ -5,15 +5,19 @@ nbproject
 video_service.todo
 
 # Build
- build/coverage
- build/logs
- build/api
- pdepend
- phpdox
- cache.properties
+build/build
+build/coverage
+build/logs
+build/api
+pdepend
+phpdox
+cache.properties
 
 # Nginx
- docker/nginx/logs
+docker/nginx/logs
 
 # Env
-  env.list
+env.list
+
+#Others
+vendor
