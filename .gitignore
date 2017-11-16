@@ -18,6 +18,3 @@ docker/nginx/logs
 
 # Env
 env.list
-
-#Others
-vendor
