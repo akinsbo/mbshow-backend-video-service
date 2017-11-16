@@ -8,7 +8,7 @@ CONTAINER_PORT = 80
 HOST_PORT = 3005
 
 CONTAINER_VOLUME = /usr/share/nginx/html
-HOST_VOLUME = /docker/volumes/nginx-vol/_data
+HOST_VOLUME = `pwd`/docker/volumes/nginx-vol/_data
 # Start up application
 start:
 	@echo "Firing up containers"
@@ -41,7 +41,7 @@ run:
 deploy:
 	@echo "Deploying"
 	@echo "	building docker image"
-	docker-compose -f deploy.yml up
+#	docker-compose -f docker-compose.deploy.yml up
 	# aws configure
 #	docker build -t $(IMAGE_NAME):$(TAG_NAME) .
 #	docker build \
@@ -49,10 +49,12 @@ deploy:
 #	--build-arg AWS_SECRET_ACCESS_KEY=$(AWS_SECRET_ACCESS_KEY) \
 #	-t $(IMAGE_NAME):$(TAG_NAME) .
 	@echo ""
-#	docker run --env-file env.list -d \
-#	-p $(HOST_PORT):$(CONTAINER_PORT) \
-#	-v $(HOST_VOLUME):$(CONTAINER_VOLUME):ro \
-#	--name $(CONTAINER_NAME) $(IMAGE_NAME):$(TAG_NAME)
+	docker stop $(CONTAINER_NAME)
+	docker rm $(CONTAINER_NAME)
+	docker run --env-file env.list -d \
+	-p $(HOST_PORT):$(CONTAINER_PORT) \
+	-v $(HOST_VOLUME):$(CONTAINER_VOLUME):ro \
+	--name $(CONTAINER_NAME) $(IMAGE_NAME):$(TAG_NAME)
 
 # git
 fetch:

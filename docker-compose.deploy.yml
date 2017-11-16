@@ -1,4 +1,4 @@
-## YAML Template.
+## deployment docker-compose file
 version: "3"
 
 services:
@@ -8,8 +8,6 @@ services:
         ports:
             - "8003:80"
         volumes:
-#            - ./web:/usr/share/nginx/html
+            - .:/usr/share/nginx/html:ro
 # see more at https://www.digitalocean.com/community/tutorials/how-to-configure-the-nginx-web-server-on-a-virtual-private-server
             - ./docker/volumes/nginx-vol/_data:/usr/share/nginx/html:ro
-     
-     

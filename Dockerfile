@@ -28,16 +28,16 @@ RUN chmod +x kompose
 RUN mv ./kompose /usr/local/bin/kompose
 
 # docker build --build-arg AWS_ACCESS_KEY_ID=myaccesskey AWS_SECRET_ACCESS_KEY=mysecretkey Dockerfile
-#ENV AWS_ACCESS_KEY_ID
-#ENV AWS_SECRET_ACCESS_KEY
+ENV AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+ENV AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
 RUN echo "Printing the variables"
-RUN echo ${AWS_ACCESS_KEY_ID}
-RUN echo ${AWS_SECRET_ACCESS_KEY}
+RUN echo AWS_ACCESS_KEY_ID
+RUN echo AWS_SECRET_ACCESS_KEY
 RUN export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
 RUN export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
 
 # Copy and convert with Kompose
-COPY docker-compose.yml /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 WORKDIR  /usr/share/nginx/html
 CMD ["kompose", "convert", "--file", "docker-compose.yml"]
 
