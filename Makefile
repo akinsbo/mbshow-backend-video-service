@@ -11,6 +11,7 @@ CONTAINER_VOLUME = /usr/share/nginx/html
 HOST_VOLUME = `pwd`/docker/volumes/nginx-vol/_data
 # Start up application
 start:
+	@echo "Please first start up docker"
 	@echo "Firing up containers"
 	docker-compose up
 
