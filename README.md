@@ -1,5 +1,15 @@
 # mbshow-backend-video-service
 
+## Run
+Run with:
+```sh
+docker-compose up
+```
+Or
+```sh
+make start
+```
+
 |Docker-Compose Version	|Nginx Version	|PHP Version	|Alpine Version |
 |:---------------------:|:-------------:|:-------------:|:-------------:|
 |3.0                    |1.13.5         |7.1.10         |3.4            |
