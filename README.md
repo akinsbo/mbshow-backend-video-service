@@ -10,6 +10,8 @@ Or
 make start
 ```
 
+Then visit http://localhost:8002
+
 |Docker-Compose Version	|Nginx Version	|PHP Version	|Alpine Version |
 |:---------------------:|:-------------:|:-------------:|:-------------:|
 |3.0                    |1.13.5         |7.1.10         |3.4            |
@@ -45,7 +47,7 @@ bash build.sh
         ```
         If you do not see "mbstring" in the generated list, install it as follows
     * sudo apt-get update && sudo apt install php-mbstring
-    * restart jenkins by typing "http://localhost:8080/restart
+    * restart jenkins by typing "http://localhost:8080/restart" in browser
     * sudo apt-get update && sudo apt install php-xdebug
         * Configure xdebug by editing:
         ```sh
