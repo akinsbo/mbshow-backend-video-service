@@ -12,4 +12,4 @@ declare(strict_types = 1);
  * @author Olaolu Akinsete
  */
 
-require __DIR__ . '/../src/Bootstrap.php';
+require __DIR__ . '/../src/home.php';

@@ -12,11 +12,10 @@ require_once __DIR__ . '/../vendor/autoload.php';
  * @author Olaolu Akinsete
  */
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+// framework/index.php
+require_once __DIR__ . '/bootstrap.php';
 
-$request = Request::createFromGlobals();
+$response->setContent("Homepage");
 
-$response = new Response();
-
+$response->send();
 
