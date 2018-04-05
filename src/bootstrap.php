@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types = 1);
-
+require_once __DIR__ . '/../vendor/autoload.php';
 /*
  * MaryBoyeShow
  *
@@ -12,8 +12,14 @@ declare(strict_types = 1);
  * @author Olaolu Akinsete
  */
 
-$input = $_GET['name'] ?? 'World';
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
-printf('Hello %s', htmlspecialchars($input, ENT_QUOTES, 'UTF-8'));
+$request = Request::createFromGlobals();
 
+$name = $request->get('name', 'World');
+
+$response = new Response(sprintf('Hello %s', htmlspecialchars($name, ENT_QUOTES, 'UTF-8')));
+
+$response->send();
 

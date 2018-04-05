@@ -1,6 +1,6 @@
 {
     "name": "maryboye-backend-video-service",
-    "description": "hellofresh dev test",
+    "description": "backend for mbshow",
     "keywords": ["maryboye", "show", "mbshow"],
     "license": "",
     "authors": [
@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "symfony/http-foundation": "^4.0"
     },
     "autoload": {
         "psr-4": {
