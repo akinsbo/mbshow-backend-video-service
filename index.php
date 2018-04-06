@@ -12,4 +12,4 @@ declare(strict_types = 1);
  * @author Olaolu Akinsete
  */
 
-require __DIR__ . '/web/index.php';
+require __DIR__ . '/web/front.php';
